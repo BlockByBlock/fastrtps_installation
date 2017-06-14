@@ -60,19 +60,11 @@
 	$ gradle build
 ```
 
-### Testing the serial port
-* Upload test serial to arduino
-
-```
-	$ cd ~/rtps_serial/testserial
-	$ platformio run --target upload
-```
 
 ### Documentation
 * fastrtps (https://github.com/grassjelly/Fast-RTPS)
 * fastrtps_minimal (https://github.com/grassjelly/fastrtps_minimal)
-* rti_serial (https://github.com/grassjelly/rti_serial)
-* serial lib (https://github.com/wjwwood/serial)
+
 
 
 
