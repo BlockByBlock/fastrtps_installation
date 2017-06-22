@@ -28,7 +28,11 @@
 * Installation of Gradle
 
 ```
-	$ sudo apt install gradle
+	$ cd ~/
+	$ wget https://services.gradle.org/distributions/gradle-3.4-bin.zip
+	$ sudo unzip -d /opt/gradle gradle-3.4-bin.zip
+	$ export PATH=$PATH:/opt/gradle/gradle-3.4/bin
+	$ rm gradle-3.4-bin.zip
 ```
 
 * Installation and setup of Fast-RTPS
@@ -40,12 +44,12 @@
 ### Setup for fastrtps
 * To set ENV variables for fastrtpsgen and FASTRTPSHOME:
 
-```
+```	$ cd ~/Fast-RTPS
 	$ echo "export FASTRTPSHOME=${PWD}" >> ~/.bashrc
 	$ echo "export PATH=$PATH:${PWD}/fastrtpsgen/scripts" >> ~/.bashrc
 	$ source ~/.bashrc
 	$ mkdir build -p && cd build
-	$ cmake ../ -DEPROSIMA_BUILD=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install
+	$ cmake ../ -DBUILD_JAVA=ON -DEPROSIMA_BUILD=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install
 	$ make
 	$ make install
 ```
