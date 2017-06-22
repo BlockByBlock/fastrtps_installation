@@ -35,9 +35,6 @@
 
 ```
 	$ git clone --recursive https://github.com/eProsima/Fast-RTPS	
-	$ cd Fast-RTPS
-	$ mkdir Fast-RTPS/build
-	$ cd Fast-RTPS/build
 ```
 
 ### Setup for fastrtps
