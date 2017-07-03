@@ -58,7 +58,7 @@
 
 ```
 	$ cd Fast-RTPS/fastrtpsgen
-	$ gradle build
+	$ sudo gradle build
 ```
 
 
