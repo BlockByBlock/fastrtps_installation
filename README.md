@@ -9,8 +9,13 @@
 	$ sudo apt-get install -y oracle-java8-installer
 ```
 
-* Installation of G-test
-
+* Installation of G-test 
+Install cmake and unzip if required
+```
+	sudo apt update
+	sudo apt install cmake
+	sudo apt install unzip
+```
 ```
 	$ sudo apt-get install -y libgtest-dev
 	$ cd /usr/src/gtest
