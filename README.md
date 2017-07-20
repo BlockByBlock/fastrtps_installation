@@ -8,36 +8,20 @@
 	$ sudo apt-get update
 	$ sudo apt-get install -y oracle-java8-installer
 ```
+* Installation of Libboost
+
+```
+	$ sudo apt-get install -y cmake unzip libblkid-dev e2fslibs-dev libboost-all-dev libaudit-dev
+```
 
 * Installation of G-test 
-Install cmake and unzip if required
-```
-	sudo apt update
-	sudo apt install cmake
-	sudo apt install unzip
-```
+
 ```
 	$ sudo apt-get install -y libgtest-dev
 	$ cd /usr/src/gtest
 	$ sudo cmake .
 	$ sudo make
 	$ sudo cp libg* /usr/lib/
-```
-
-* Installation of Libboost
-
-```
-	$ sudo apt-get install -y cmake libblkid-dev e2fslibs-dev libboost-all-dev libaudit-dev
-```
-
-* Installation of Gradle
-
-```
-	$ cd ~/
-	$ wget https://services.gradle.org/distributions/gradle-3.4-bin.zip
-	$ sudo unzip -d /opt/gradle gradle-3.4-bin.zip
-	$ export PATH=$PATH:/opt/gradle/gradle-3.4/bin
-	$ rm gradle-3.4-bin.zip
 ```
 
 * Installation and setup of Fast-RTPS
@@ -59,6 +43,15 @@ Install cmake and unzip if required
 	$ make install
 ```
 
+* Installation of Gradle
+
+```
+	$ cd Fast-RTPS/fastrtpsgen
+	$ wget https://services.gradle.org/distributions/gradle-3.4-bin.zip
+	$ sudo unzip -d /opt/gradle gradle-3.4-bin.zip
+	$ export PATH=$PATH:/opt/gradle/gradle-3.4/bin
+	$ rm gradle-3.4-bin.zip
+```
 * Fastrtpsgen
 
 ```
