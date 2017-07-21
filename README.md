@@ -34,7 +34,7 @@
 * To set ENV variables for fastrtpsgen and FASTRTPSHOME:
 
 ```	$ cd ~/Fast-RTPS
-	$ echo "export FASTRTPSHOME=${PWD}" >> ~/.bashrc
+	$ echo "export FASTRTPSHOME=${PWD}/Fast-RTPS" >> ~/.bashrc
 	$ echo "export PATH=$PATH:${PWD}/fastrtpsgen/scripts" >> ~/.bashrc
 	$ source ~/.bashrc
 	$ mkdir build -p && cd build
