@@ -44,11 +44,10 @@
 * To set ENV variables for fastrtpsgen and FASTRTPSHOME:
 
 ```
-	$ cd 
-	$ echo "export FASTRTPSHOME=${PWD}/Fast-RTPS" >> ~/.bashrc
+	$ cd ~/Fast-RTPS
+	$ echo "export FASTRTPSHOME=${PWD}" >> ~/.bashrc
 	$ echo "export PATH=$PATH:${PWD}/fastrtpsgen/scripts" >> ~/.bashrc
 	$ source ~/.bashrc
-	$ cd /Fast-RTPS
 	$ mkdir build -p && cd build
 	$ cmake ../ -DBUILD_JAVA=ON -DEPROSIMA_BUILD=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install
 	$ make
