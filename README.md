@@ -1,4 +1,23 @@
-### Installation of Required Software
+## Fast-RTPS 1.5.0
+
+### Installation  
+```
+	$ wget "https://github.com/eProsima/Fast-RTPS/archive/v1.5.0.tar.gz"
+	$ tar -xvzf v1.5.0.tar.gz
+	$ rm v1.5.0.tar.gz
+	$ mv Fast-RTPS-1.5.0 Fast-RTPS
+	$ cd Fast-RTPS
+	$ rm -rf thirdparty
+	$ mkdir thirdparty
+	$ git submodule add https://github.com/michalsrb/android-ifaddrs android-ifaddrs
+	$ git submodule add https://github.com/chriskohlhoff/asio asio
+	$ git submodule add https://github.com/eProsima/IDL-Parser idl
+	$ git submodule add https://github.com/leethomason/tinyxml2 tinyxml2
+	$ git submodule add https://github.com/eProsima/Fast-CDR fastcdr
+
+```
+
+### Installation of Dependencies
 * Installation of Java
 
 ```
@@ -24,16 +43,10 @@
 	$ sudo cp libg* /usr/lib/
 ```
 
-* Installation and setup of Fast-RTPS
-
-```
-	$ git clone --recursive https://github.com/eProsima/Fast-RTPS	
-```
 
 * Installation of Gradle
 
 ```
-	$ cd Fast-RTPS/fastrtpsgen
 	$ wget https://services.gradle.org/distributions/gradle-3.4-bin.zip
 	$ sudo unzip -d /opt/gradle gradle-3.4-bin.zip
 	$ export PATH=$PATH:/opt/gradle/gradle-3.4/bin
@@ -48,9 +61,10 @@
 	$ echo "export FASTRTPSHOME=${PWD}" >> ~/.bashrc
 	$ echo "export PATH=$PATH:${PWD}/fastrtpsgen/scripts" >> ~/.bashrc
 	$ source ~/.bashrc
-	$ mkdir build -p && cd build
-	$ cmake ../ -DBUILD_JAVA=ON -DEPROSIMA_BUILD=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=install
+	$ mkdir build && cd build
+	$ cmake -DTHIRDPARTY=ON ..
 	$ make
+	$ sudo su
 	$ make install
 ```
 
@@ -62,10 +76,6 @@
 	$ gradle build          // Root        
 ```
 
-
-### Documentation
-* fastrtps (https://github.com/grassjelly/Fast-RTPS)
-* fastrtps_minimal (https://github.com/grassjelly/fastrtps_minimal)
 
 
 
