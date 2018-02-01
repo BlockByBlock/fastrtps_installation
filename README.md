@@ -76,7 +76,12 @@
 	$ gradle build          // Root        
 ```
 
+* Include path 
 
+```
+	$ set(fastcdr_DIR "$ENV{FASTRTPSHOME}/build/external/install/lib/fastcdr/cmake")
+	$ set(fastrtps_DIR "$ENV{FASTRTPSHOME}/build/external/install/lib/fastrtps/cmake")  
+```
 
 
 
