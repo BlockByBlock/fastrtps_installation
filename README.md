@@ -9,6 +9,8 @@
 	$ cd Fast-RTPS
 	$ rm -rf thirdparty
 	$ mkdir thirdparty
+	$ git init
+	$ cd thirdparty
 	$ git submodule add https://github.com/michalsrb/android-ifaddrs android-ifaddrs
 	$ git submodule add https://github.com/chriskohlhoff/asio asio
 	$ git submodule add https://github.com/eProsima/IDL-Parser idl
